@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cart</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="screen">
+
+    <header class="topbar">
+      <button class="back" aria-label="Go back">
+        <svg width="14" height="18" viewBox="0 0 14 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M10 2 3 9l7 7"/>
+        </svg>
+      </button>
+      <h1 class="title">Cart</h1>
+    </header>
+
+    <section class="items">
+
+      <!-- Item 1 -->
+      <article class="item">
+        <div class="thumb thumb--matcha"></div>
+        <div class="info">
+          <h2 class="name">Cappuccino</h2>
+          <p class="flavour">Dalgona Macha</p>
+          <p class="price">₹299</p>
+        </div>
+        <div class="qty">
+          <button class="qty-btn" aria-label="Decrease quantity">−</button>
+          <span class="qty-num">1</span>
+          <button class="qty-btn" aria-label="Increase quantity">+</button>
+        </div>
+      </article>
+
+      <!-- Item 2 (swiped to reveal delete) -->
+      <div class="swipe-row">
+        <article class="item item--swiped">
+          <div class="thumb thumb--blueberry"></div>
+          <div class="info">
+            <h2 class="name">Cappuccino</h2>
+            <p class="flavour">Bursting Blueberry</p>
+            <p class="price">₹249</p>
+          </div>
+          <div class="qty">
+            <button class="qty-btn" aria-label="Decrease quantity">−</button>
+            <span class="qty-num">2</span>
+            <button class="qty-btn" aria-label="Increase quantity">+</button>
+          </div>
+        </article>
+        <button class="delete" aria-label="Remove item">
+          <svg width="18" height="20" viewBox="0 0 18 20" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 5h14M7 5V3h4v2M4 5l1 12h8l1-12M7.5 9v5M10.5 9v5"/>
+          </svg>
+        </button>
+      </div>
+
+      
+      <article class="item">
+        <div class="thumb thumb--cocoa"></div>
+        <div class="info">
+          <h2 class="name">Cappuccino</h2>
+          <p class="flavour">Cinnamon &amp; Cocoa</p>
+          <p class="price">₹99</p>
+        </div>
+        <div class="qty">
+          <button class="qty-btn" aria-label="Decrease quantity">−</button>
+          <span class="qty-num">1</span>
+          <button class="qty-btn" aria-label="Increase quantity">+</button>
+        </div>
+      </article>
+
+    </section>
+
+    <section class="summary">
+
+      <button class="coupon">
+        <span>Apply Coupon Code</span>
+        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="m2 2 6 6-6 6"/>
+        </svg>
+      </button>
+
+      <dl class="charges">
+        <div class="row">
+          <dt>Delivery Charges</dt>
+          <dd>₹49</dd>
+        </div>
+        <div class="row">
+          <dt>Taxes</dt>
+          <dd>₹64.87</dd>
+        </div>
+      </dl>
+
+      <div class="total">
+        <span class="total-label">Grand Total</span>
+        <span class="total-amount">₹1009.87</span>
+      </div>
+
+      <button class="pay">PAY NOW</button>
+
+    </section>
+
+  </main>
+
+</body>
+</html>
