@@ -1,10 +1,24 @@
 *{
-    height: fit-content;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 body{
     background-color: black;
     color: rgb(222, 221, 221);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    max-width:400px;
+    margin: 0 auto;
+
+    position: relative;
+
 }
 .heading{
     display: flex;
@@ -24,6 +38,7 @@ body{
     gap: 10px;
     border: 1px solid black;
     background-color: rgb(34, 33, 33);
+    position: relative;
 }
 .confirmation{
     display: flex;
@@ -33,6 +48,16 @@ body{
     gap: 15px;
     border: 1px solid black;
     background-color: rgb(18, 18, 18);
+    padding: 30px 20px;
+    border-radius: 15px;
+
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    z-index: 10;
 }
 .confirmation img{
     border-radius: 45px;
@@ -75,7 +100,9 @@ body{
 
     width: 100%;
     font-size: 20px;
-    background-color: gray;
+    background-color: #EFE3C8;
     border-radius: 5px;
+
+   
 
 }
