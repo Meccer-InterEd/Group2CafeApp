@@ -53,6 +53,18 @@
     border-radius: 14px;
 }
 
+.thumb {
+    display: none;
+}
+
+.item img {
+    flex-shrink: 0;
+    width: 60px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 .info {
     flex: 1;
     min-width: 0;
