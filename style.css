@@ -78,13 +78,24 @@ body{
 }
 .adress-item{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+    gap: 30px;
 }
+
 .textContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
 }
+
+.textContainer strong{
+    font-weight: 100px;
+    font-size: large;
+}
+
 .comfirm-bar{
     display: flex;
     align-items: center;
@@ -105,4 +116,9 @@ body{
 
    
 
+}
+
+.home-icon{
+    height: 50px;
+    width: 50px;
 }
