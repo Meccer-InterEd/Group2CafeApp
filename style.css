@@ -33,10 +33,7 @@ a {
     text-decoration: none;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-}
+
 
 .page-heading {
     text-align: center;
@@ -533,9 +530,11 @@ img {
     padding: 10px 6px;
 }
 
-.adress-item img {
-    margin-top: 2px;
-    border-radius: 8px;
+.home-icon {
+    flex-shrink: 0;
+    object-fit: contain; 
+    width: 35px;      
+    height: 46px;
 }
 
 .textContainer {
